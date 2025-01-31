@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-body: hsl(47, 88%, 63%);
+    --color-p: hsl(0, 0%, 42%);
+    --font-family-h3: Figtree ExtraBold, sans-serif;
+    --font-family-h5: Figtree SemiBold, sans-serif;
+    --font-family-p: Figtree Light, sans-serif;
+    --color-p-wh: hsl(0, 0%, 42%);
+    --color-p-des: hsl(0, 0%, 7%);
+    --background-section: hsl(0, 0%, 100%);
+    --font-size-p: 16px;
+}
+
+body {
+    background: var(--background-body);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+section {
+    background: var(--background-section);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    width: 380px;
+    box-shadow: 7px 7px 0px 2px black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+img.illustration {
+    width: 99%;
+    border-radius: 10px;
+}
+
+h3 {
+    font-family: var(--font-family-h3);
+    font-weight: 800;
+}
+
+h5 {
+    font-family: var(--font-family-h3);
+    background: var(--background-body);
+    width: 80px;
+    height: 7%;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 800;
+    justify-content: center;
+}
+
+p, p.description {
+    font-family: var(--font-family-p);
+    font-size: 14px;
+    color: var(--color-p-des);
+    font-size: var(--font-size-p);
+    line-height: 1.5em;
+}
+
+p.description {
+    color: var(--color-p-wh);
+}
+
+h3:hover {
+    color: var(--background-body);
+    cursor: pointer;
+}
+
+div.name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+div p {
+    font-family: var(--font-family-h5);
+    font-weight: 800;
+    font-size: 12px;
+}
+
+div img {
+    width: 40px;
+    height: 40px;
+}
+
+div.attribution {
+    font-family: var(--font-family-p);
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 80%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 786px) {
+    section {
+        width: 65%;
+    }
+}
+
+@media (min-width: 787px) and (max-width: 1024px) {
+    section {
+        width: 39%;
+    }
+}
+
